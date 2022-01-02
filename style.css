@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 1200px;
-    width: 100%;
+    min-width: 600px;
     background-image: url("img/wing.png");
     background-size: 1200px 1200px;
     background-repeat: no-repeat;
@@ -72,7 +72,8 @@ body {
 }
 .button_go {
     margin: 100px 0 0 0;
-    font-size: 40px;
+    padding: 20px;
+    font-size: 30px;
     width: 150px;
     height: 150px;
     border: 0 solid black;
