@@ -1,0 +1,160 @@
+body {
+    margin: 0 auto;
+    background-color: mintcream;
+}
+.main_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 1200px;
+    width: 100%;
+    background-image: url("img/wing.png");
+    background-size: 1200px 1200px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 100px auto;
+}
+.container {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: red;
+    text-align: center;
+    line-height: 230px;
+    overflow: hidden;
+    width: 600px;
+    min-height: 600px;
+    margin: 80px auto 100px auto;
+    border: 2px solid darkblue;
+    border-radius: 50%;
+    position: relative;
+    background-color: blue;
+    background-image: url("img/christmas_tree_PNG139.png");
+    background-size: 350px 350px;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    animation-name: christmas-tree;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+}
+
+  @keyframes christmas-tree {
+      0% {
+          background-position-y: 50%;
+          background-position-x: 50%;
+      }
+      25% {
+          background-position-y: 30%;
+          background-position-x: 70%;
+      }
+      50% {
+          background-position-y: 70%;
+          background-position-x: 20%;
+      }
+      75% {
+          background-position-y: 70%;
+          background-position-x: 70%;
+      }
+      100% {
+          background-position-y: 50%;
+          background-position-x: 50%;
+      }
+  }
+
+.wall_properties {
+    text-align: center;
+    line-height: 205px;
+    background-color: blue;
+    width: 210px;
+    height: 210px;
+    z-index: 1;
+}
+.button_go {
+    margin: 100px 0 0 0;
+    font-size: 40px;
+    width: 150px;
+    height: 150px;
+    border: 0 solid black;
+    border-radius: 50%;
+    background-color: green;
+    outline: none;
+    z-index: 99;
+    cursor: pointer;
+    box-shadow: 1px 2px 8px 8px darkgreen;
+}
+.button_go:hover {
+    background-color: limegreen;
+}
+.button_go:active {
+    background-color: darkgreen;
+    color: white;
+    box-shadow: 1px 2px 8px 8px green;
+}
+
+.moving_wall_one {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 600px;
+    background-image: url("img/pngwing.com.png");
+    background-size: 450px 450px;
+    background-repeat: no-repeat;
+    background-position-x: -33%;
+    background-position-y: 43%;
+}
+
+.moving_wall_two {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    background-image: url("img/pngwing.com.png"), url("img/png_bells.png");
+    background-size: 450px 450px, 250px 350px;
+    background-repeat: no-repeat;
+    background-position: 50% -27%, 102% -2%;
+}
+
+.moving_wall_two:after {
+    content:"";
+    display: block;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    left: 10px;
+    top: 210px;
+    z-index: 98;
+    background-color: blue;
+    background-image: url("img/png_bells.png");
+    background-size: 225px 450px;
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-position-y: 100%;
+}
+
+.moving_wall_three {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 600px;
+    background-image: url("img/pngwing.com.png");
+    background-size: 450px 450px;
+    background-repeat: no-repeat;
+    background-position-x: 129%;
+    background-position-y: 43.6%;
+}
+
+.moving_wall_four {
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    background-image: url("img/pngwing.com.png");
+    background-size: 450px 450px;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 135%;
+    z-index: 1;
+}
+
+
+
+
